@@ -19,6 +19,30 @@
     * the correct choice exactly, as it does string matching. (case sensitive)
     *
     */
+
+/**
+*Let's create the randomization of the questions!
+*/
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}	   
+	    
     var quiz = [
         {
             "question"      :   "Q1: Who came up with the theory of relativity?",
@@ -59,7 +83,8 @@
 
     ];
 
-
+quiz = shuffle(quiz);
+	    
     /******* No need to edit below this line *********/
     var currentquestion = 0, score = 0, submt=true, picked;
 
