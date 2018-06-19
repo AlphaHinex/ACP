@@ -41,7 +41,23 @@ function shuffle(array) {
   }
 
   return array;
-}	   
+}
+	    
+if (!("scramble" in Array.prototype)) {
+  Object.defineProperty(Array.prototype, "scramble", {
+    enumerable: false,
+    value: function() {
+      var o, i, ln = this.length;
+      while (ln--) {
+        i = Math.random() * (ln + 1) | 0;
+        o = this[ln];
+        this[ln] = this[i];
+        this[i] = o;
+      }
+      return this;
+    }
+  });
+}		
 	    
     var quiz = [
         {
@@ -83,6 +99,9 @@ function shuffle(array) {
 
     ];
 
+quiz.forEach(q => q.choices.scramble());
+//console.log(quiz[0].choices);
+		
 quiz = shuffle(quiz);
 	    
     /******* No need to edit below this line *********/
@@ -287,14 +306,6 @@ quiz = shuffle(quiz);
 			var output = document.getElementById("frame").innerHTML;
 			document.getElementById("placecontent").value = output;
 		}
-
-$(function () {
-    var parent = $("#choice-block");
-    var divs = parent.children();
-    while (divs.length) {
-        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
-    }
-});
 	    
     </script>
     <style type="text/css" media="all">
