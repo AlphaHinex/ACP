@@ -61,7 +61,7 @@ if (!("scramble" in Array.prototype)) {
 	    
     var quiz = [
         {
-            "question"      :   "Q1: Who came up with the theory of relativity?",
+            "question"      :   "Question: Who came up with the theory of relativity?",
             "image"         :   "http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/220px-Albert_Einstein_Head.jpg",
             "choices"       :   [
                                     "Sir Isaac Newton",
@@ -73,7 +73,7 @@ if (!("scramble" in Array.prototype)) {
             "explanation"   :   "Albert Einstein drafted the special theory of relativity in 1905.",
         },
         {
-            "question"      :   "Q2: Who is on the two dollar bill?",
+            "question"      :   "Question: Who is on the two dollar bill?",
             "image"         :   "http://upload.wikimedia.org/wikipedia/commons/thumb/9/94/US_%242_obverse-high.jpg/320px-US_%242_obverse-high.jpg",
             "choices"       :   [
                                     "Thomas Jefferson",
@@ -85,7 +85,7 @@ if (!("scramble" in Array.prototype)) {
             "explanation"   :   "The two dollar bill is seldom seen in circulation. As a result, some businesses are confused when presented with the note.",
         },
         {
-            "question"      :   "Q3: What event began on April 12, 1861?",
+            "question"      :   "Question: What event began on April 12, 1861?",
             "image"         :   "",
             "choices"       :   [
                                     "First manned flight",
@@ -236,6 +236,8 @@ quiz = shuffle(quiz);
          * Quiz ends, display a message.
          */
 		function endQuiz(){
+			var endQuestions = "End of Quiz!";
+			document.getElementById("pager").innerHTML = endQuestions;
 			$('#explanation').empty();
 			$('#question').empty();
 			$('#choice-block').empty();
