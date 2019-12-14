@@ -10,9 +10,8 @@
     <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
 	<script src="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="quiz.js"></script>
     <script>
-
-    var quiztitle = "Bobby's Sample Quiz";
 
     /**
     * Set the information about your questions here. The correct answer string needs to match
@@ -59,50 +58,6 @@ if (!("scramble" in Array.prototype)) {
   });
 }		
 	    
-    var quiz = [
-        {
-            "question"      :   "721：阿里云的云盾的DDoS防护功能可以保护阿里云机房内的所有云产品,包括:云服务器ECS、负载均衡SLB、云数据库RDS、对象存储OSS等",
-            "image"         :   "",
-            "choices"       :   [
-                                    "对",
-                                    "错"
-                                ],
-            "correct"       :   "错",
-            "explanation"   :   "云盾DDoS防护功能可以保障ECS、SLBWAF、VPC、EIP、NAT云产品的DDoS网络安全,并不是题目中说的这些。",
-        },
-        {
-            "question"      :   "720：如果阿里云上的用户拥有多台云服务器ECS实例,且没有专业的运维团队或者不愿意在运维上花精力,可以开通阿里云的云盾安骑士,提供专家人工安全体检、清除木马、系统加固、人工安全技术支持、托管服务报告",
-            "image"         :   "",
-            "choices"       :   [
-                                    "对",
-                                    "错"
-                                ],
-            "correct"       :   "错",
-            "explanation"   :   "安骑土不提供人工安全技术支持、托管服务报告的服务,需要人工安全技术支持、托管服务报告的服务需要选用安全管家服务",
-        },
-        {
-            "question"      :   "719：阿里云专有网络VPC中支持将云服务器ECS实例从同一个路由器下的一台交换机转移到另台交换机,也支持从一个路由器切换到另一个路由器",
-            "image"         :   "",
-            "choices"       :   [
-                                    "对",
-                                    "错"
-                                ],
-            "correct"       :   "错",
-            "explanation"   :   "云服务器ECS实例支持切换交换机,但是不支持切换路由器操作。",
-		},
-		{
-            "question"      :   "718：云计算有多种不同的服务模式,以下场景描述的是典型的Saas(软件即服务)服务:用户只要接上网络,通过浏览器就能直接使用在云端上运行的应用,而不需要考虑安装、维护等工作,并且兔去初期高昂的软硬件投入。",
-            "image"         :   "",
-            "choices"       :   [
-                                    "对",
-                                    "错"
-                                ],
-            "correct"       :   "对",
-            "explanation"   :   "SaaS的正确描述,SaaS就像打开自来水龙头就能用水一样,企业根据实际需要,向SaaS提供商租赁软件服务",
-        },
-
-    ];
-
 //use this for IE syntax error at => : ECMA script 6 not supported in IE 11 :(
 //quiz.forEach(function(q){ return q.choices.scramble()});
 
