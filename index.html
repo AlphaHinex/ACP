@@ -142,12 +142,12 @@
 	         */
 			function processQuestion(choices) {
 				if (allCorrect(choices)) {
-					$('.choice').eq(choices).addClass('btn-success').css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#fff' });
+					// $('.choice').eq(choices).addClass('btn-success').css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#fff' });
 					$('#explanation').html('<span class="correct">CORRECT!</span> ' + htmlEncode(quiz[currentquestion]['explanation']));
 					score++;
 				} else {
-					$('.choice').eq(choices).addClass('btn-danger').css({ 'font-weight': 'bold', 'border-color': '#f93939', 'color': '#fff' });
-					$('#explanation').html('<span class="incorrect">INCORRECT!</span> ' + htmlEncode(quiz[currentquestion]['explanation']));
+					// $('.choice').eq(choices).addClass('btn-danger').css({ 'font-weight': 'bold', 'border-color': '#f93939', 'color': '#fff' });
+					$('#explanation').html('<span class="incorrect">INCORRECT!</span> ' + htmlEncode(quiz[currentquestion]['correct'] + quiz[currentquestion]['explanation']));
 				}
 				currentquestion++;
 
