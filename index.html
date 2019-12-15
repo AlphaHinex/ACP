@@ -112,7 +112,7 @@
 					$('#question-image').remove();
 				}
 				addChoices(quiz[currentquestion]['choices']);
-				setupButtons();
+				setupButtons(Array.isArray(quiz[currentquestion]['correct']));
 
 				jQuery(document).ready(function ($) {
 					$("#question").html(function () {
@@ -175,11 +175,21 @@
 	        /**
 	         * Sets up the event listeners for each button.
 	         */
-			function setupButtons() {
+			function setupButtons(multi) {
+				$('.choice').off('mouseout mouseover');
 				$('.choice').on('click', function () {
 					picked = $(this).attr('data-index');
-					$('.choice').removeAttr('style').off('mouseout mouseover');
-					$(this).css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#51a351' });
+					if (multi) {
+						if ($(this).attr('style')) {
+							$(this).removeAttr('style');
+						} else {
+							$(this).css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#51a351' });
+						}
+					} else {
+						$('.choice').removeAttr('style');
+-                       $(this).css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#51a351' });
+					}
+					
 					if (submt) {
 						submt = false;
 						$('#submitbutton').css({ 'color': '#fff', 'cursor': 'pointer' }).on('click', function () {
@@ -239,7 +249,7 @@
 					//add submit button
 					$(document.createElement('div')).addClass('btn-success choice-box').attr('id', 'submitbutton').text('- CHECK ANSWER -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
 
-					setupButtons();
+					setupButtons(Array.isArray(quiz[0]['correct']));
 				}
 			}
 
