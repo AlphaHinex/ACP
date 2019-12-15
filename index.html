@@ -6,10 +6,9 @@
 	<meta name="viewport" content="initial-scale=1.0">
     <title>Quiz</title>
     <!-- jquery for maximum compatibility -->
-	<link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css">
-    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="resources/bootstrap-combined-2.2.1.min.css">
+	<script src="resources/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
+	<script src="resources/bootstrap-3.3.5.min.js"></script>
 	<script src="quiz.js"></script>
     <script>
 
@@ -177,9 +176,7 @@
 					if (correct.length != choices.size) {
 						return false;
 					}
-					return correct.every(function(item) {
-						Array.from(choices.keys()).some((key) => item === options[key]);
-					});
+					return correct.every((item) => Array.from(choices.keys()).some((key) => item === options[key]));
 				} else {
 					return options[Array.from(choices.keys())[0]] == correct;
 				}
