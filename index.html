@@ -68,7 +68,7 @@
 		quiz = shuffle(quiz);
 
 		/******* No need to edit below this line *********/
-		var currentquestion = 0, score = 0, submt = true, picked;
+		var currentquestion = 0, score = 0, submt = true, picked = new Map();
 
 		jQuery(document).ready(function ($) {
 
@@ -139,15 +139,15 @@
 	        /**
 	         * After a selection is submitted, checks if its the right answer
 	         *
-	         * @param {choice} number The li zero-based index of the choice picked
+	         * @param {choices} Map The li zero-based index map of the choices picked
 	         */
-			function processQuestion(choice) {
-				if (quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']) {
-					$('.choice').eq(choice).addClass('btn-success').css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#fff' });
+			function processQuestion(choices) {
+				if (allCorrect(choices)) {
+					$('.choice').eq(choices).addClass('btn-success').css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#fff' });
 					$('#explanation').html('<span class="correct">CORRECT!</span> ' + htmlEncode(quiz[currentquestion]['explanation']));
 					score++;
 				} else {
-					$('.choice').eq(choice).addClass('btn-danger').css({ 'font-weight': 'bold', 'border-color': '#f93939', 'color': '#fff' });
+					$('.choice').eq(choices).addClass('btn-danger').css({ 'font-weight': 'bold', 'border-color': '#f93939', 'color': '#fff' });
 					$('#explanation').html('<span class="incorrect">INCORRECT!</span> ' + htmlEncode(quiz[currentquestion]['explanation']));
 				}
 				currentquestion++;
@@ -168,26 +168,45 @@
 					//		$(this).text('- CHECK ANSWER -').css({'color':'inherit'}).on('click');
 					//	})
 				}
+			}
 
-
+			function allCorrect(choices) {
+				var correct = quiz[currentquestion]['correct'];
+				var options = quiz[currentquestion]['choices'];
+				if (Array.isArray(correct)) {
+					if (correct.length != choices.size) {
+						return false;
+					}
+					return correct.every(function(item) {
+						Array.from(choices.keys()).some((key) => item === options[key]);
+					});
+				} else {
+					return options[Array.from(choices.keys())[0]] == correct;
+				}
 			}
 
 	        /**
 	         * Sets up the event listeners for each button.
+			 * 
+			 * @param {multi} boolean Has multi choices
 	         */
 			function setupButtons(multi) {
 				$('.choice').off('mouseout mouseover');
 				$('.choice').on('click', function () {
-					picked = $(this).attr('data-index');
+					var key = $(this).attr('data-index');
 					if (multi) {
 						if ($(this).attr('style')) {
 							$(this).removeAttr('style');
+							picked.delete(key);
 						} else {
+							picked.set(key, '');
 							$(this).css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#51a351' });
 						}
 					} else {
 						$('.choice').removeAttr('style');
+						picked.clear();
 -                       $(this).css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#51a351' });
+						picked.set(key, '');
 					}
 					
 					if (submt) {
