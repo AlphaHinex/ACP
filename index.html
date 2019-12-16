@@ -57,8 +57,14 @@
 			});
 		}
 
-		var currentquestion = 0, score = 0, submt = true, picked = new Map();
+		var currentquestion = 0, score = 0, submt = true, picked = new Map(), filtered = [], droped = false;
 		function reset() {
+			quiz = quiz.concat(filtered);
+			filtered = [];
+			repeat();
+		}
+
+		function repeat() {
 			//use this for IE syntax error at => : ECMA script 6 not supported in IE 11 :(
 			//quiz.forEach(function(q){ return q.choices.scramble()});
 
@@ -68,7 +74,7 @@
 
 			quiz = shuffle(quiz);
 
-			currentquestion = 0, score = 0, submt = true, picked = new Map();
+			currentquestion = 0, score = 0, submt = true, picked = new Map(), droped = false;
 
 			$('#frame').empty();
 			$('#placecontent').val('');
@@ -122,6 +128,7 @@
 	         */
 			function nextQuestion() {
 				submt = true;
+				$('#drop').hide();
 				$('#explanation').empty();
 				$('#question').text(quiz[currentquestion]['question']);
 				$('#pager').text('Question ' + Number(currentquestion + 1) + ' of ' + quiz.length);
@@ -167,7 +174,7 @@
 					})
 
 				} else if (currentquestion < quiz.length) {
-					$('#submitbutton').html('NEXT QUESTION &raquo;').removeClass('btn-success').addClass('btn-warning').css({ 'font-weight': 'bold', 'border-color': '#faa732', 'color': '#fff' }).on('click', function () {
+					$('#submitbutton').html('NEXT QUESTION &raquo;').removeClass('btn-success').addClass('btn-primary').css({ 'font-weight': 'bold', 'border-color': '#faa732', 'color': '#fff' }).on('click', function () {
 						$(this).text('- CHECK ANSWER -').removeClass('btn-warning').addClass('btn-success').css({ 'font-weight': 'bold', 'border-color': '#51a351', 'color': '#fff' }).on('click');
 						nextQuestion();
 					})
@@ -176,6 +183,8 @@
 					//		$(this).text('- CHECK ANSWER -').css({'color':'inherit'}).on('click');
 					//	})
 				}
+
+				$('#drop').show();
 			}
 
 			function allCorrect(choices) {
@@ -273,10 +282,28 @@
 
 					//add submit button
 					$(document.createElement('div')).addClass('btn-success choice-box').attr('id', 'submitbutton').text('- CHECK ANSWER -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
+
+					$(document.createElement('div')).addClass('btn-warning choice-box').attr('id', 'drop').text('- DROP -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
+					$(document.createElement('div')).addClass('btn-info choice-box').attr('id', 'repeat').text('- REPEAT -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
 					$(document.createElement('div')).addClass('btn-danger choice-box').attr('id', 'reset').text('- RESET -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
 
 					setupButtons(Array.isArray(quiz[0]['correct']));
 				}
+
+				$('#drop').hide();
+				$('#drop').on('click', function() {
+					filtered.push(quiz.splice(--currentquestion, 1)[0]);
+					$(this).hide();
+				});
+
+				$('#repeat').on('click', function() {
+					repeat();
+					init();
+
+					jQuery(document).ready(function ($) {
+						renderQuestion();
+					});
+				});
 
 				$('#reset').on('click', function() {
 					reset();
@@ -296,11 +323,6 @@
 		jQuery(document).ready(function ($) {
 			renderQuestion();
 		});
-
-		function copyText() {
-			var output = document.getElementById("frame").innerHTML;
-			document.getElementById("placecontent").value = output;
-		}
 
 	</script>
     <style type="text/css" media="all">
@@ -355,8 +377,5 @@
 	</div>
 </div>	
 	
-<div class="col-sm-6 formControls rsform-block-submit">
-	<button type="submit" name="form[submit]" id="submit" onclick="copyText()" class="rsform-submit-button  btn btn-primary">Submit Quiz</button>			
-</div>	
 </body>
 </html>
