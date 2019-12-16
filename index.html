@@ -57,17 +57,40 @@
 			});
 		}
 
-		//use this for IE syntax error at => : ECMA script 6 not supported in IE 11 :(
-		//quiz.forEach(function(q){ return q.choices.scramble()});
-
-		//use this for ECMA script 6
-		quiz.forEach(q => q.choices.scramble());
-		//console.log(quiz[0].choices);
-
-		quiz = shuffle(quiz);
-
-		/******* No need to edit below this line *********/
 		var currentquestion = 0, score = 0, submt = true, picked = new Map();
+		function reset() {
+			//use this for IE syntax error at => : ECMA script 6 not supported in IE 11 :(
+			//quiz.forEach(function(q){ return q.choices.scramble()});
+
+			//use this for ECMA script 6
+			quiz.forEach(q => q.choices.scramble());
+			//console.log(quiz[0].choices);
+
+			quiz = shuffle(quiz);
+
+			currentquestion = 0, score = 0, submt = true, picked = new Map();
+
+			$('#frame').empty();
+		}
+
+		function renderQuestion() {
+			$("#question").html(function () {
+				var text = $(this).text().trim().split(" ");
+				var first = text.shift();
+				return (text.length > 0 ? "<span class='number'>" + first + "</span> " : first) + text.join(" ");
+			});
+
+			$('p.pager').each(function () {
+				var text = $(this).text().split(' ');
+				if (text.length < 2)
+					return;
+
+				text[1] = '<span class="qnumber">' + text[1] + '</span>';
+				$(this).html(
+					text.join(' ')
+				);
+			});
+		}
 
 		jQuery(document).ready(function ($) {
 
@@ -114,23 +137,7 @@
 				setupButtons(Array.isArray(quiz[currentquestion]['correct']));
 
 				jQuery(document).ready(function ($) {
-					$("#question").html(function () {
-						var text = $(this).text().trim().split(" ");
-						var first = text.shift();
-						return (text.length > 0 ? "<span class='number'>" + first + "</span> " : first) + text.join(" ");
-					});
-
-					$('p.pager').each(function () {
-						var text = $(this).text().split(' ');
-						if (text.length < 2)
-							return;
-
-						text[1] = '<span class="qnumber">' + text[1] + '</span>';
-						$(this).html(
-							text.join(' ')
-						);
-					});
-
+					renderQuestion();
 				});
 
 			}
@@ -149,6 +156,7 @@
 					// $('.choice').eq(choices).addClass('btn-danger').css({ 'font-weight': 'bold', 'border-color': '#f93939', 'color': '#fff' });
 					$('#explanation').html('<span class="incorrect">INCORRECT!</span> ' + htmlEncode(quiz[currentquestion]['correct'] + quiz[currentquestion]['explanation']));
 				}
+				document.getElementById("placecontent").value = "You got " + score + " out of " + quiz.length + " correct.";
 				currentquestion++;
 
 				if (currentquestion == quiz.length) {
@@ -264,9 +272,19 @@
 
 					//add submit button
 					$(document.createElement('div')).addClass('btn-success choice-box').attr('id', 'submitbutton').text('- CHECK ANSWER -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
+					$(document.createElement('div')).addClass('btn-success choice-box').attr('id', 'reset').text('- RESET -').css({ 'font-weight': 'bold', 'color': '#fff', 'padding': '30px 0', 'border-radius': '10px' }).appendTo('#frame');
 
 					setupButtons(Array.isArray(quiz[0]['correct']));
 				}
+
+				$('#reset').on('click', function() {
+					reset();
+					init();
+
+					jQuery(document).ready(function ($) {
+						renderQuestion();
+					});
+				});
 			}
 
 			init();
@@ -274,23 +292,7 @@
 		});
 
 		jQuery(document).ready(function ($) {
-			$("#question").html(function () {
-				var text = $(this).text().trim().split(" ");
-				var first = text.shift();
-				return (text.length > 0 ? "<span class='number'>" + first + "</span> " : first) + text.join(" ");
-			});
-
-			$('p.pager').each(function () {
-				var text = $(this).text().split(' ');
-				if (text.length < 2)
-					return;
-
-				text[1] = '<span class="qnumber">' + text[1] + '</span>';
-				$(this).html(
-					text.join(' ')
-				);
-			});
-
+			renderQuestion();
 		});
 
 		function copyText() {
