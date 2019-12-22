@@ -82,9 +82,9 @@
 
 		function renderQuestion() {
 			$("#question").html(function () {
-				var text = $(this).text().trim().split(" ");
+				var text = $(this).text().trim().split(".");
 				var first = text.shift();
-				return (text.length > 0 ? "<span class='number'>" + first + "</span> " : first) + text.join(" ");
+				return (text.length > 0 ? "<span class='number'>" + first + "</span> " : first) + text.join(".");
 			});
 
 			$('p.pager').each(function () {
@@ -166,6 +166,8 @@
 				}
 				document.getElementById("placecontent").value = "You got " + score + " out of " + quiz.length + " correct.";
 				currentquestion++;
+				// clear after process question
+				picked.clear();
 
 				if (currentquestion == quiz.length) {
 					$('#submitbutton').html('GET QUIZ RESULTS').removeClass('btn-success').addClass('btn-info').css({ 'border-color': '#3a87ad', 'color': '#fff' }).on('click', function () {
