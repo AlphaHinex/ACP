@@ -730,5 +730,6 @@ var quiz = [
     {'question':'在 OSS 中，用户操作的基本数据单元是 Object，Object 中不包含哪个元素？','choices':['A. key','B. id','C. meta','D. data'],correct:'B. id','explanation':'https://help.aliyun.com/document_detail/87728.html?spm=a2c4g.11186623.6.546.22177815qJLXmi'},
     {'question':'在使用阿里云弹性伸缩（Auto Scaling）时，希望能根据计算资源的使用情况来增加或者减少云服务器 ECS 实例，如当 CPU 利用率小于等于 30% 时则减少一台云服务器 ECS 实例，首先配置伸缩规则为“减少 1 台 ECS”，然后还需要 ____ 来实现。','choices':['A. 创建伸缩配置','B. 设置伸缩组的属性','C. 创建定时任务','D. 创建报警任务'],correct:'D. 创建报警任务','explanation':'https://help.aliyun.com/document_detail/25893.html?spm=a2c4g.11186623.6.572.18c86d1cVlDYPF'},
     {'question':'阿里云的负载均衡 SLB 中，可以通过健康检查来判断后端云服务器 ECS 实例的可用性。健康检查可以识别出后端服务器池中是否有不可用的云服务器 ECS 实例，如果有则不给这些异常的云服务器 ECS 实例分配任务，直到这些云服务器 ECS 实例恢复正常，某些特殊应用场景下需要关闭健康检查。以下说法中正确的是 ____。','choices':['A. 七层服务可以关闭健康检查，四层服务无法关闭健康检查','B. 四层服务可以关闭健康检查，七层服务无法关闭健康检查','C. 无论四层和七层均无法关闭健康检查','D. 无论四层和七层均可以关闭健康检查'],correct:'A. 七层服务可以关闭健康检查，四层服务无法关闭健康检查','explanation':'https://help.aliyun.com/document_detail/85960.html?spm=a2c4g.11186623.4.2.378a112bYbjyLv'},
+    {'question':'互联网的一次标准的网络层会话可以用五个元素来唯一标识，通常被称为“网络通信五元组”，在此基础之上可以对某些传输过程进行安全控制或防护。网络五元组由 ____ 部分组成。（正确答案的数量：5 个）','choices':['A. 源 IP','B. 应用层协议','C. 目标 IP','D. 传输层协议','E. 源端口','F. 目标端口'],correct:['A. 源 IP','C. 目标 IP','D. 传输层协议','E. 源端口','F. 目标端口'],'explanation':'https://baike.baidu.com/item/%E4%BA%94%E5%85%83%E7%BB%84/6489646'},
 
 ];
