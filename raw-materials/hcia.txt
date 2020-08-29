@@ -1,0 +1,1952 @@
+Q1.使用命令rpmbuild -bb XX. spec (XX表示文件名)制作RPM包时，RPM包生成在什么目录下?
+A.BUILD
+B.SOURCE
+C.RPMS
+D.SPEC
+Answer: C
+Q2.在BenchmarkSQL执行以下哪个脚本，可以对表中写入数据?
+A.runLoader.sh
+B.runBenchmark.sh
+C.runDatabaseBuild.sh
+D.runDatabaseDestroy.sh
+Answer: A
+Q3.BenchmarkSQL执行以下哪个脚本加载数据?
+A.runBenchmark.sh
+B.runDatabaseBuild.sh
+C.runDatabaseDestroy.sh
+D.runLoader.sh
+Answer: B
+Q4.代码扫描工具Dependency Advisor是部署在哪种架构的服务器或者弹性云服务器上?
+A.ARM
+B.鲲鹏
+C.Power
+D.x86
+Answer: D
+Q5.以下哪个不属于镜像管理特性?
+A.修改镜像
+B.删除镜像
+C.镜像导出
+D.查询镜像
+Answer: D
+Q5.Hi Bench是什么？
+A.大数据开发框架
+B.大数据可视化平台
+C.大数据基准测试套件
+D.大数据分析工具
+Answer: C
+Q7.关于容器的删除操作，以下哪项是正确的？
+A.可通过“docker rm <容器ID>"删除正在运行的容器
+B.可通过“docker rmi <容器ID>”删除已停止的容器
+C.可通过“docker rm <容器ID>"删除已停止的容器
+D.可通过“docker rmi <容器ID>”删除正在运行的容器
+Answer: C
+Q8.关于华为鲲鹏迁移工具分析报告提供的依赖库so文件的操作建议，以下哪项是不正确的?
+A.目前不存在鲲鹏平台无法识别的依赖库So文件
+B.鲲鹏平台不支持该类依赖库S0文件,需要用户自行处理
+C.如果依赖库so文件已经过鲲鹏平台验证，但无二进制安装包,则需要用户下载依赖库源码，然后上传至目标服务器进行编译安装
+D.如果依赖库S0文件已经过鲲鹏平台验证，且已有二进制安装包,则用户可以直按将工具提供的开源版本依赖库安装包下载到本地，然后上传至目标服务器进行安装使用
+Answer: A
+Q9.以下关于web界面访问华为鲲鹏代码迁移工具的方式,描述正确的是
+A.单用户单任务访问
+B.多用户多任务并发访间
+C.多用户同时访问
+D.单用户多任务访问
+Answer: A
+Q10.以下哪个选项不是iSula通用容器引辈的特点?
+A.升级不中断业务
+B.增强安全性和调测特性
+C.大幅提升容器性能
+D.快速灵活
+Answer: C
+Q11.在修改BenchmarkSQL连接PostereSQL的配置文件时，关于runMins和runTxnsPerTerminal这两个参数的设置，以下哪项是正确的?
+A.必须有一个设定为0
+B.必须相等
+C.均为0
+D.必须不相等，且均不为0
+Answer: A
+Q12.扫描工具Dependency Advi sor支持以下哪种使用模式?
+A.web
+B.make
+C.test
+D.name
+Answer: A
+Q13.如果要放开外部对弹性云服务器的8080端口访问，可以通过配置以下哪项功能实现?
+A.弹性公网IP带宽
+B.主机组
+C.安全组
+D.VPC子网
+Answer: C
+Q14.系统盘镜像类型不包含以下哪个
+A.机架服务器系统盘镜像
+B.普通云服务器系统盘镜像
+C.GPU加速云服务器系统盘镜像
+D.裸金属云服务器系统盘镜像
+Answer: A
+Q15.私有镜像通过以下哪个功能可以实现本地业务部署和公有云业务部署的统一化持久化?
+A.镜像导出
+B.镜像市场
+C.镜像复制
+D.镜像共享
+Answer: A
+Q16.以下哪个命令表示只生成rpm源代码的命令?
+A.rpmbuild -ba
+B.rpmbuild -bs
+C.rpmbuild -bc
+D.rpmbuild -bb
+Answer: B
+Q17.以下哪个不是使用rpm工具安装软件?
+A.自动安装依赖包
+B.全自动安装
+C.能够进行数据库的记载
+D.自定义安装路径
+Answer: A
+Q18.提供预装操作系统、应用环境和各类软件的优质第三方镜像是属于以下哪种镜像?
+A.共享镜像
+B.私有镜像
+C.市场镜像
+D.公共镜像
+Answer: C
+Q19.ssh协议默认端口号是什么?
+A.9600
+B.23
+C.22
+D.513
+Answer: C
+Q20.关于容器相关概念的描述，以下哪项是错误的?
+A.标签:可用于识别不同的变体或版本
+B.仓库：一个软件库， 存储了可下载并安装在系统中的软件包
+C.镜像:容器的运行实例
+D.容器:image的运行实例
+Answer: C
+Q21.使用gcc编译时，编译选项-march的作用是什么?
+A.指定指令集
+B.指定cpu型号
+C.指定流水线
+D.提升兼容性
+Answer: A
+Q22.下列哪个是华为鲲鹏生态兼容的非国产操作系统?
+A.BCLinux
+B.openEuler
+C.Ubuntu
+D.Kylin
+Answer: C
+Q23.谁是Linux之父?
+A.Richard Matthew Stallman
+B.Andrew Morton
+C.Bill Gates
+D.LimusTorvalds
+Answer: D
+Q24.(多选)可以从哪些方面对PostgreSQL进行性能调优?(多选)
+A.数据库参数
+B.硬件
+C.编译参数
+D.操作系统
+Answer: AC
+Q25.(多选)使用BenchmarkSQL前需要进行哪些操作?
+A.配置环境变量
+B.重启服务器
+C.安装JDK
+D.使环境变量生效
+Answer: ACD
+Q26.(多选)关于rpm包和SRPM包的描述，以下正确的是?
+A.SRPM包含源代码而RPM不包含
+B.rpm包可以直接安装，SRPM包不可以
+C.两者都可修改编译参数
+D.rpm包是已编译的程序，而SRPM不是
+Answer: ABD
+Q27.(多选)镜像服务的典型应用场景有哪些?
+A.快速部署应用
+B.批量复制弹性云服务器
+C.传统业务上云
+D.实时同步数据
+Answer: ABC
+Q28.(多选)镜像文件一般包括以下哪些内容?
+A.预装的软件
+B.数据盘
+C.操作系统
+D.系统盘
+Answer: AC
+Q29.(多选)以下哪些不是针对spec文件的操作命令?
+A.cmake
+B.makefile
+C.make
+D.make install
+Answer: AB
+Q30.(多选)rpm安装包有哪些优点?
+A.提供软件版本资讯，软件名称，软件用途等相关信息，便于了解软件
+B.内含编译程序，免编译
+C.使用数据库记录rpm文件的相关参数，便于升级、移除、查询与验证
+D.预先检查系统版本，可避免文件被错误安装
+Answer: ABCD
+Q31.(多选)创建C/C++程序性能分析任务时，以下关于分析类型，描述正确的是?
+A.Profile System,即采集整个服务器系统，无需关注系统中有哪些类型的应用在运行，采集时长需要配置参数控制，适用于多业务混合运行和有子进程的场景
+B.Attach to Process,即该采集对象针对正在运行的应用程序，通过关联到运行该应用程序的PID的方式，来实时跟踪和采集该应用程序的性能数据,采集时长需要配置参数控制，适用于某些应用需要长时间持续运行和采集的场景
+C.Launch Application,即采集启动的时候，同时启动Application,采集时长受Appl ication的执行时间来控制，适用于Application运行时间较短的场景
+D.C/C++程序仅支持Launch Application和Attach to Process两种分析类型
+Answer: ABC
+Q32.(多选)以下哪些属于Dockerfile的指令？
+A.FROM
+B.CMD
+C.EXPOSE
+D.RUN
+Answer: ABCD
+Q33.(多选)关于使用源码方式安装加速引擎软件，以下说法正确的有哪些?
+A.编译安装zlib加速库
+B.在下载好的源码目录下，使用make命令编译加速器
+C.编译安装加速器OpenSSL引擎
+D.编译安装Warpdrive驱动开发库
+E.安装openssl 1.1.1a或以上版本
+F.安装内核开发包kernel-devel
+Answer: ABCDEF
+Q34.(多选)同一段C/C++代码，在鲲鹏处理器与x86架构处理器上编译的可执行程序有哪些不同?
+A.指令
+B.指令使用的寄存器
+C.功能
+D.文件结构
+Answer: AB
+Q35.(多选)以下关于X6000 V5描述正确的是?
+A.机框支持2个3000w电源
+B.每个服务器节点支持3个半高半长标准PCIe插槽
+C.支持4个半宽双路服务器节点
+D.每个服务器节点支持16个DDR4 DIM插槽
+Answer: ACD
+Q36.(多选)以下哪些场景属于数据密集紧耦合场景?
+A.基因测序
+B.流体动力学
+C.天气预测
+D.环境预测
+Answer: CD
+Q37.(多选)在PostgreSQL迁移流程中，包含以下哪些步骤?
+A.迁移分析
+B.性能测试
+C.环境准备
+D.源码修改
+Answer: ABC
+Q38.(多选)通过以下哪些方式可以获取华为鲲鹏系列服务?
+A.购买华为云鲲鹏弹性云服务器
+B.购买基于x86架构的弹性云服务器
+C.购买RH服务器
+D.购买Tai shan服务器
+Answer: AD
+Q39.(多选)私有镜像包含以下哪些功能?
+A.镜像加密
+B.镜像共享
+C.镜像导出
+D.镜像复制
+Answer: ABCD
+Q40.(多选)在华为公有云中，私有镜像包括?
+A.市场镜像
+B.系统镜像
+C.数据镜像
+D.共享镜像
+Answer: BC
+Q41.(多选)docker run -p 6379:6379 v $PWD/data:/data -d t_arm64v8/centos_ redis:5.05 redis server --appendonly yes关于此命令的描述，以下哪些是正确的?
+A.“6379:6379" :将主机的6379端口映射到容器的6379端口
+B.“appendonly yes"，打开持久化配置
+C.该命令功能是启动容器，并在容器启动时候执行容器内的redis-server服务
+D.“$PWD/data: /data" :将主机中当前目录下的data挂载到容器的/data
+Answer: BCD
+Q42.(多选)使用华为鲲鹏代码迁移工具对源码进行扫描分析时，需要进行哪些方面的检查和分析?
+A.检查x86平台与鲲鹏平台相异的编译器宏、编译选项、buildin函数、attribute函数等列表
+B.对比输入的(S0文件名)列表和S0依赖库白名单
+C.扫描分析用户软件目标二进制文件依赖的源文件集合
+D.检查Make file中的编译链接
+Answer: ABCD
+Q43.(多选)C/C++语言开发的源码在编译时，以下哪些模块是不需要的？
+A.汇编器
+B.存储器
+C.加载器
+D.编译器
+Answer: BC
+Q44.(多选)以下哪些是Tai Shan大数据方案使用的主要服务器型号?
+A.2280均衡型
+B.5280存储型
+C.XA320计算节点
+D.X6000高密型
+Answer: AB
+Q45.(多选)以下关于华为鲲鹏920的特点描述正确的有哪些?
+A.性能可匹配Intel Skylake(V5) 高端处理器型号
+B.CPU最多支持2个100GE网口，支持RoCE特性
+C.相比同等性能的Intel处理器，功耗更低
+D.支持8内存通道，带宽高于Intel Skyl ake (V5)的6通道
+Answer: CD
+Q46.yum和rpm安装方式本质都是基于RPM包来安装软件
+A.正确
+B.错误
+Answer: A
+Q47.交叉编译是在一个平台 上生成另一个平台上可执行的代码
+A.正确
+B.错误
+Answer: A
+Q48.BenchmarkSQL使用GCC编译进行编译安装
+A.正确
+B.错误
+Answer: B
+Q49.Dockerfile中的每一条指令 都分别对应镜像的每一层
+A.正确
+B.错误
+Answer: A
+Q50.C/C++语言属于编译型语言，其编译后得到的可执行程序执行时依赖的指令是与CPU架构不相关的，因此此类应用程序不需要移植
+A.正确
+B.错误
+Answer: B
+Q51.Centos是开源的操作系统，Debian不属于开源操作系统
+A.正确
+B.错误
+Answer: B
+Q52.Tai Shan服务器的CPU是ARM架构的
+A.正确
+B.错误
+Answer: A
+Q53.华为鲲鹏云服务产品发布前，需要先加入鲲鹏凌云伙伴计划并通过鲲鹏云服务兼容性认证
+A.正确
+B.错误
+Answer: A
+Q54.通过"ps -ef | grep PostgreSQL ”命令可以确认数据库进程是否启动
+A.正确
+B.错误
+Answer: B
+Q55.为方便客户业务的统一部署， 镜像服务建立起了镜像与弹性云服务器之间、镜像与裸金属服务器之间、以及镜像与外部文件之间的直接联系。
+A.正确
+B.错误
+Answer: A
+Q56.一个弹性公网IP能同时给多个弹性云服务器使用
+A.正确
+B.错误
+Answer: B
+Q57.华为鲲鹏性能优化工具支持分析C/C+ +和Java Mixed-Mode两种应用程序类型。
+A.正确
+B.错误
+Answer: A
+Q58.对于Java类应用程序进行性能分析时，由于受java的jit编译的限制，函数分析结果中只能查看到对应的源码，无法查看汇编和代码流图。
+A.正确
+B.错误
+Answer: A
+Q59.HiBench支持在编译时指定编译模块。
+A.正确
+B.错误
+Answer: A
+Q60.docker的基础镜像中包含父镜像。
+A.正确
+B.错误
+Answer: B
+Q61.华为鲲鹏云服务可提供KC1型ECS和KS1型BMS
+A.正确
+B.错误
+Answer: A
+Q62.Tai Shan服务器必须使用特殊的专有内存和硬盘
+A.正确
+B.错误
+Answer: B
+Q63.镜像导出时，支持的最大镜像文件大小是?
+A.128GB
+B.64GB
+C.32GB
+D.256GB
+Answer: A
+Q64.通过源码编译制作软件包时，默认会把打包后的rpm包放在以下哪个目录下?
+A.BUILD
+B.SPECS
+C.RPMS
+D.SOURCES
+Answer: C
+Q65.以下关于使用yum安装软件，说法不正确的是?
+A.自动安装依赖包
+B.缺乏自主性
+C.全自动安装
+D.自定义安装路径
+Answer: D
+Q66.可以根据设定的寻路协议实时自动优化网络结构， 以保持害户使用的网络持续稳定、 高效.这句话是关于以下哪项的描述?
+A.静态BGP
+B.全动态BGP
+C.共享宽带
+D.独享宽带
+Answer: B
+Q67.在HiBench测试过程中，以下哪项可以用于设置hadoop安装目录?
+A.hibench.hadoop.executable
+B.hibench.hdfs.master
+C.hibench.hadoop.home
+D.hibench.hadoop.configure.dir
+Answer: C
+Q68.TPCC属于以下哪种业务场景?
+A.混合场景
+B.OLTP场景
+C.OLAP场景
+D.数据仓库
+Answer: B
+Q69.关于C/C++程序中的数据类型转换，以下说法错误的是?
+A.当超出整型取值范围的双精度浮点型数据，转换为整型时，鲲鹏处理器遵循保留最大值或最小值的原则
+B.C/C++双精度浮点型数据转整型数据时，如果超出了整型的取值范围，鲲鹏处理器的表现与x86平台的表现不同
+C.程序应尽量避免数据类型转换时溢出
+D.当双精度浮点型数据，转换为整型时，x86处理器定义 了一个indefinite integer value- --“不确定数值”，用来处理溢出情况
+Answer: D
+Q70.华为鲲鹏代码迁移工具支持部署在哪种类型的操作系统上?
+A.Ubuntu
+B.SuSE
+C.中标麒麟OS
+D.CentOS
+Answer: D
+Q71.以下哪些属于从x86到鲲鹏平台的软件迁移的流程?
+A.技术分析>功能验证>编译迁移>性能调优
+B.技术分析>编译迁移>功能验证>性能调优
+C.性能调优>技术分析>编译迁移>功能验证
+D.功能验证>技术分析>编译迁移>性能调优
+Answer: B
+Q72.关于使用maven仓库构建开源软件，以下选项错误的是?
+A.maven软件仓库先查询本地仓库
+B.maven软件仓库可以配置proxy代理
+C.maven软件仓库可以获取所有外部依赖库
+D.本地软件仓库没有需要的组件时，maven将去远程仓库下载
+Answer: C
+Q73.关于迁移C/C+语言开发的开源软件，以下选项不正确的是？
+A.使用makefi1e编译源码，生成可执行程序
+B.将源码部署到虚拟机可以直接执行
+C.可以通过开源软件中的readme了解外部依赖库
+D.编译前，要使用开源软件源码中的cmake或makefile
+Answer: B
+Q74.下列哪些oS是银河麒麟发布的OS版本?
+A.Kylin V3.3
+B.NeoKylin V7.6
+C.NeoKylin V7.5
+D.Kylin V4.0.2
+Answer: D
+Q75.TaiShan 2280 V2服务器最多支持多少个PCIe扩展槽位?
+A.6
+B.2
+C.4
+D.8
+Answer: D
+Q76.Tai Shan V2服务器最多支持多少个计算内核?
+A.48
+B.32
+C.64
+D.128
+Answer: D
+Q77.HiBench是什么？
+A.大数据开发框架
+B.大数据可视化平台
+C.大数据基准测试套件
+D.大数据分析工具
+Answer: C
+Q78.华为云鲲鹏裸金属服务器最高支持的核数是多少？
+A.256核
+B.32核
+C.128核
+D.64核
+Answer: C
+Q79.以下哪种不是iSula的部署模式？
+A.应用容器
+B.安全容器
+C.系统容器
+D.通用容器
+Answer: D
+Q80.BenchmarkSQL 编译安装时要求使用的是（）？
+A.JDK6或以上版本
+B.JDK7或以上版本
+C.GCC6或以上版本
+D.GCC7或以上版本
+Answer: B
+Q81.Linux环境中，以下哪一条命令只用于下载资源到本地但不安装？
+A.apt-get
+B.yum
+C.apt
+D.wget
+Answer: D
+Q82.使用代码扫描工具Dependency Advisor扫描源代码时，源代码应该放在哪个目录下？
+A./home
+B./usr/local
+C./opt/depadv/depadmin/
+D./root/bin
+Answer: C
+Q83.(多选)镜像服务可为租户提供以下哪些能力?
+A.完善的镜像管理能力
+B.灵活的镜像自助能力
+C.自动的镜像发布能力
+D.个性化的镜像制作能力
+Answer: ABD
+Q84.(多选)关于线程的描述A.以下不正确的是？
+A.线程个数和CPU个数相同时,性能最优
+B.线程越少,资源抢占就越少,性能就越好
+C.线程个数需根擦实际业务进行调整以达到性能最优
+D.线程越多,性期越高
+Answer: BC
+Q85.(多选)华为鲲鹏性能优化工具有哪些作用?
+A.分析系统性能，提供性能优化指导
+B.修改用户的源代码进行性能优化
+C.收集服务器的处理器硬件、操作系统、进程/线程、函数等各层次的性能数据
+D.定位到热点函数，包括应用程序函数、模块函数与内核函数，甚至能够定位到热点指令
+Answer: ACD
+Q86.(多选)关于容器与虚拟机的比较，以下哪些说法是正确的?
+A.容器启动时间非常快，是秒级启动
+B.容器不具有宿主机root权限，存在安全隐患
+C.虚拟机的启动速度通常比容器慢
+D.虚拟机虽然是硬件隔离，但是具备宿主机root权限，相对不安全
+Answer: AC
+Q87.(多选)华为鲲鹏代码迁移工具提供哪些维度的软件规则字典?
+A.提供编译器字典，包括x86和鲲鹏编译器选项、宏定义、buildin函数、attribute函数
+B.提供x86鲲鹏编译器映射字典
+C.提供x86鲲鹏汇编映射字典
+D.提供汇编代码字典，包括x86和鲲鹏汇编字典
+Answer: ABCD
+Q88.(多选)Kunpeng支持以下哪些国产操作系统?
+A.Deepin
+B.NeoKylin
+C.Ubuntu
+D.CentOS
+Answer: AB
+Q89.(多选)华为鲲鹏Kubernetes容器(CCE)服务包含以下哪几种类型集群?
+A.AI鲲鹏容器集群
+B.大数据鲲鹏容器集群
+C.通用鲲鹏容器集群
+D.混合计算容器集群
+Answer: ACD
+Q90.(多选)鲲鹏920芯片有以下几种物理核数型号？
+A.32核
+B.64核
+C.48核
+D.16核
+Answer: ABC
+Q91.(多选)以下哪些是ARM处理器的应用领域?
+A.超大型云数据中心领域
+B.E级超算系统领域
+C.移动终端领域
+D.企业应用领域
+Answer: ABCD
+Q92.(多选)以下关于华为鲲鹏920的特点描述正确的有哪些?
+A.性能可匹配Intel Skylake(V5) 高端处理器型号
+B.CPU最多支持2个100GE网口，支持RoCE特性
+C.相比同等性能的Intel处理器，功耗更低
+D.支持8内存通道，带宽高于Intel Skylake(V5)的6通道
+Answer: BCD
+Q93.(多选)关于鲲鹏通用计算型kc1规格弹性云服务器的描述，以下哪些描述正确的是
+A.CPU:MEM为1：8
+B.最高30G内网带宽，400万PPS
+C.最大60vCPU|480GB(存储密集型）
+D.CPU:MEM为 1：2或1：4
+Answer: BD
+Q94.(多选)以下哪些os被kunpeng纳入生态，其指定版本获得kunpeng920兼容性列表支持？
+A.NeoKylin
+B.Windows
+C.Ubuntu
+D.Centos
+Answer: ACD
+Q95.(多选)以下哪些移植建议可以在源码分析结果中查看到
+A.需要移植的依赖库so文件数量和具体文件信息
+B.移植所需的工作量
+C.需要移植的源代码文件数量和具体文件信息
+D.需要移植的c/c++和makefile源代码行数、汇编代码行数
+Answer: ACD
+Q96.(多选)为什么会有交叉编译？
+A.一个完整的Linux编译环境需要很多支持，交叉编译使我们不需要花时间将各种支持包移植到目标平台
+B.整个编译过程是非常消耗资源的，嵌入式系统往往没有足够的内存或磁盘空间
+C.目标平台的运行速度往往比主机慢得多，许多专用的嵌入式硬件被设计为低成本和低功耗，没有太高的性能
+D.即使目标平台资源很充足，可以本地编译，但是第一个在目标平台上运行的本地编译器总需要通过交叉编译获得
+Answer: ABCD
+Q97.(多选)目前Linux安装软件的方式有哪些？
+A.rpm安装
+B.源码安装
+C.Srpm安装
+D.yum安装
+Answer: ABD
+Q98.(多选)在通过编译参数调优PostgreSQL之前，需要满足的gcc版本号为?
+A.7.3
+B.6.3
+C.4.8
+D.5.3
+Answer: ABD
+Q99.可以使用rpmbuild命令将源码打包成rpm包
+A.正确
+B.错误
+Answer: A
+Q100.spec文件目录的宏是%_specdir
+A.正确
+B.错误
+Answer: A
+Q101.弹性公网IP (Elastic IP，简称EIP) 提供独立的公网IP资源，包括公网IP地址与公网出口带宽服务
+A.正确
+B.错误
+Answer: A
+Q102.CentOS环境下，修改了配置文件/etc/profile后，可以执行source命令使之生效
+A.正确
+B.错误
+Answer: A
+Q103.华为鲲鹏性能优化工具支持CLI和Web两种访问方式
+A.正确
+B.错误
+Answer: B
+Q104.用户可以获得WRF的源码
+A.正确
+B.错误
+Answer: A
+Q105.Docker是一个基于C++语言开发的开源应用容器引擎
+A.正确
+B.错误
+Answer: B
+Q106.容器支持跨不同指令集架构平台的迁移
+A.正确
+B.错误
+Answer: B
+Q107.docker Daemon是服务端守护进程，负责接收客户端的指令(创建、运行、分发容器)，并处理这些请求
+A.正确
+B.错误
+Answer: A
+Q108.在进行代码移植时，如果Java应用程序包含基于C/C++语言开发的SO库文件，则需要编译移植后才能在鲲鹏平台上正常运行
+A.正确
+B.错误
+Answer: A
+Q109.华为鲲鹏代码迁移工具能够为C/C++类应用程序提供源码分析、移植建议和移植报告
+A.正确
+B.错误
+Answer: A
+Q110.使用编译器自带的builtin函数可以提升程序的可移植性
+A.正确
+B.错误
+Answer: A
+Q111.可以通过增加编译选项“-fsigned char”，指定鲲鹏处理器平台下的char为有符号类型
+A.正确
+B.错误
+Answer: A
+Q112.Tai Shan 5280服务器是4U2路存储型服务器
+A.正确
+B.错误
+Answer: A
+Q113.HCS Online 可支持ARM+X86混合部署模式
+A.正确
+B.错误
+Answer: A
+Q114.Instruction Set Architecture（指令集架构）是软件和硬件的接口
+A.正确
+B.错误
+Answer: A
+Q115.源码分析结果中提供针对每个待移植文件的源码修改建议，但仅提供修改建议，不会修改用户的源代码
+A.正确
+B.错误
+Answer: A
+Q116.docker仓库用来保存镜像，可以理解为代码控制中的代码仓库
+A.正确
+B.错误
+Answer: A
+Q117.使用迁移工具Porting Advisor时，界面提示，“源代码路径错误”，应该重新填写源代码存放路径，点击分析按钮重新分析
+A.正确
+B.错误
+Answer: A
+Q118.在网络吞吐比较大的应用场景下，若将网卡与对应的NUMA进行绑定，性能将会提升
+A.正确
+B.错误
+Answer: A
+Q119.公共镜像是由云平台官方提供的标准操作系统的公共基础镜像，对所有用户可见
+A.正确
+B.错误
+Answer: A
+Q120.初次登录PostgreSQL数据库时，需要输入密码
+A.正确
+B.错误
+Answer: B
+Q121.BenchmarkSQL配置文件中loadWorkers指的是什么（ ）
+A.并发用户数
+B.数据库装载并发数
+C.数据库并行数
+D.数据库表的数量
+Answer: B
+Q122.TPCC衡量标准是什么？
+A.QphH
+B.响应时间
+C.tpmC
+D.TPS
+Answer: C
+Q123.Porting Advisor工具在移植源码过程中的作用是？
+A.分析源码，并给出移植工作量
+B.分析源码，并给出分析报告和源码修改建议
+C.分析源码，并修改源码
+D.分析源码，并给出性能优化建议
+Answer: B
+Q124.华为鲲鹏BMS云服务器最高可提供多少核？
+A.32
+B.48
+C.62
+D.128
+Answer: D
+Q125.IMS私有镜像类型不包括以下哪项？
+A.系统盘镜像
+B.整体镜像
+C.数据盘镜像
+D.整机镜像
+Answer: B
+Q126.可以根据设定的寻路协议实时自动优化网络结构，以保持客户使用的网络持续稳定、高效.这句话是关于以下哪项的描述？
+A.静态BGP
+B.全动态BGP
+C.独享宽带
+D.共享宽带
+Answer: B
+Q127.以下哪条命令可以查看docker镜像？
+A.docker images
+B.docker list
+C.docker container ls
+D.docker -a
+Answer: A
+Q128.以下哪个工具可以用于鲲鹏平台上进行代码迁移？
+A.Tuning kit
+B.Dependency Advisor
+C.Porting Advisor
+D.GCC
+Answer: C
+Q129.Suse操作系统是从哪个版本开始处于Kunpeng 920的OS生态圈？
+A.SLES 12.3
+B.SLES 12.4
+C.SLES 15
+D.SLES 15.1
+Answer: D
+Q130.以下哪项不是TaiShan服务器的优点？
+A.国产化，自主安全可控
+B.多物理核心，并发性能高
+C.低功耗，绿色节能
+D.生态完备，上层应用支持好
+Answer: D
+Q131.以下哪个不是华为云鲲鹏生态帮助伙伴/开发者商业变现的方式?
+A.华为鲲鹏严选馆:鲲鹏应用，优先推荐，快速商业变现
+B.华为提供鲲鹏人才培养:专业培训，完善的鲲鹏工程师认证体系
+C.华为提供鲲鹏原厂认证:专业团队，专业工具，1对1技术支持
+D.华为鲲鹏云专业服务:客户业务系统一站式搬迁服务
+Answer: D
+Q132.金融行业的鲲鹏硬替代应用不包括以下哪项?
+A.经营分析
+B.核心应用
+C.办公支撑
+D.互联网银行
+Answer: B
+Q133.以下哪种工具可用于制作RPM包?
+A.rpm-cmake
+B.rpm make
+C.rpm-test
+D.rpm-build
+Answer: D
+Q134.对PostgreSQL的编译参数进行调优时需要在CFLAGS字段中添加哪些选项
+A.-march= and
+B.-march=armv8- a+crc+lse
+C.-march=armv8-a
+D.march =X86
+Answer: B
+Q135.以下哪个是BenchmarkSQL连接PostgreSQL的配置文件?
+A.props.mysq1
+B.props.pg
+C.props.ora
+D.props.percona
+Answer: B
+Q136.以下哪种语言的源码文件不能用Porting Advisor迁移工具进行迁移分析?
+A.C++
+B.C
+C.Java
+D.汇编
+Answer: C
+Q137.在华为云上，通过以下哪种方式或工具可以访问外网?
+A.弹性公网IP
+B.云硬盘
+C.VPC
+D.镜像
+Answer: A
+Q138.在仅有x86服务器或者云服务器下，如何编译出ARM环境下执行的程序?
+A.安装交叉编译环境，通过交叉编译环境执行编译
+B.直接编译
+C.使用x86下新版本gcc编译
+D.修改权限编译
+Answer: A
+Q139.关于加密镜像的描述，以下哪项是正确的?
+A.使用加密的弹性云服务器创建的镜像为加密镜像
+B.使用加密镜像创建的弹性云服务器不一定被加密
+C.使用加密的弹性云服务器创建的镜像密钥与加密云服务器的密钥不同
+D.使用加密的弹性云服务器创建的镜像为非加密镜像
+Answer: A
+Q140.以下关于镜像的描述，不正确的是?
+A.用户可以快速复制私有镜像，不受region限制
+B.查询镜像时，支持通过标签过滤查询镜像
+C.通过导入外部镜像文件创建镜像时，不支持qcow2格式
+D.支持key-value类型的镜像标签
+Answer: C
+Q141.(多选)以下哪些属于华为云鲲鹏伙伴计划？
+A.鲲鹏凌云伙伴计划
+B.鲲鹏智数伙伴计划
+C.鲲鹏展翅伙伴计划
+D.鲲鹏翱翔伙伴计划
+Answer: ABC
+Q142.(多选)以下哪些属于鲲鹏通用解决方案？
+A.HCSO解决方案
+B.大数据解决方案
+C.HPC解决方案
+D.分布式存储
+Answer: ABCD
+Q143.(多选)华为鲲鹏性能优化工具能够提供（ ）方面的性能分析结果
+A.分析Top热点函数
+B.分析函数火焰图
+C.分析热点函数代码映射
+D.分析不同函数对应top-down模型的各指标值
+Answer: ABCD
+Q144.(多选)华为鲲鹏性能优化工具支持从哪些维度分析应用的性能瓶颈？
+A.C/C++
+B.Java Mixed-Mode
+C.Locks and Waits
+D.LLC&DDR
+Answer: AB
+Q145.(多选)下列哪些选项可能会影响WRF性能
+A.网络带宽
+B.并行线程数
+C.内存刷新频率
+D.存储读写速度
+Answer: ABCD
+Q146.(多选)HiBench支持的框架有哪些？
+A.flinkbench
+B.hadoopbench
+C.stormbench
+D.sparkbench
+Answer: ABCD
+Q147.(多选)弱内存序问题主要与如下那些因素相关？
+A.多线程
+B.多进程
+C.不同CPU之间Cache同步
+D.一级、二级、三级Cache间数据同步
+E.不同core之间Cache同步
+Answer: ACE
+Q148.(多选)在向鲲鹏处理器迁移软件时，以下哪些是可能导致编译错误或告警的原因？
+A.编译选项
+B.数据类型不同
+C.汇编指令
+D.弱内存序问题
+Answer: ABC
+Q149.(多选)关于Docker的镜像仓库，说法正确的是？
+A.实现Docker镜像的全局存储
+B.提供API接口
+C.提供Docker镜像的下载/推送/查询
+D.可用于租户管理
+Answer: ABCD
+Q150.(多选)关于执行命令“docker ps -a”后，显示的标题含义描述，正确的是？
+A.CONTAINER ID:容器的唯一表示ID
+B.IMAGE:创建容器时使用的镜像
+C.COMMAND:容器最后运行的命令
+D.CREATED:创建容器的时间
+Answer: ABCD
+Q151.(多选)华为鲲鹏代码迁移工具能够提供（ ）方面的移植评估结果
+A.扫描源码中有多少个安装包
+B.扫描源码中有多少可以移植的依赖库SO文件
+C.扫描源码中有多少行可以移植的C/C++代码、汇编代码
+D.预估移植所需的工作量
+Answer: BC
+Q152.(多选)华为鲲鹏代码迁移工具适用于以下哪些类型的应用程序？
+A.C/C++
+B.Java
+C.汇编
+D.Python
+Answer: AC
+Q153.(多选)为什么x86架构处理器上的软件在鲲鹏处理器使用时需要移植？
+A.两种处理器的指令集不同
+B.源代码需要按照目标处理的指令集编译成指令才能运行
+C.编译型语言由编译器静态编译成指令和数据
+D.解释型语言由语言的虚拟机在运行时将源码/字节码编译成指令和数据
+Answer: ABCD
+Q154.(多选)TaiShan 200机架服务器包含哪些型号？
+A.2280
+B.5280
+C.2480
+D.X6000
+Answer: ABC
+Q155.(多选)华为鲲鹏920处理器内置了那些加速器？
+A..SSL加速引擎
+B.加解密加速引擎
+C.压缩解压缩加速引擎
+D.语音识别加速引擎
+Answer: ABC
+Q156.(多选)以下哪些关于华为鲲鹏920处理器的描述是正确的（）？
+A.最多支持64核
+B.采用了7nm的制造工艺
+C.支持PCIe 4.0接口，并兼容PCIe 3.0/2.0/1.0
+D.支持多种加速器
+Answer: ABCD
+Q157.(多选)围绕鲲鹏计算产业，华为提供（ ）支持
+A.云服务
+B.工具链
+C.社区服务
+D.专业服务
+Answer: ABCD
+Q158.(多选)华为鲲鹏计算产业相关产品有哪些？
+A.华为鲲鹏处理器
+B.TaiShan服务器
+C.华为云鲲鹏云服务
+D.X86服务器
+Answer: ABC
+Q159.(多选)以下哪些是鲲鹏社区可以提供的服务？
+A.获得海量软件的迁移指导
+B.了解鲲鹏解决方案
+C.获取最新的鲲鹏咨询
+D.直接获得社区扶持
+Answer: ABC
+Q160.(多选)镜像有哪些类别？
+A.公共镜像
+B.自由镜像
+C.私有镜像
+D.共享镜像
+Answer: ACD
+Q161.(多选)以下哪些子文件包含在rpmbuild文件夹的目录结构中？
+A.SOURCE
+B.BUILD
+C.SPEC
+D.SRPMS
+Answer: BD
+Q162.(多选)以下哪些命令可以安装C语言开发环境？
+A.apt-get groupinstall build-essential
+B.apt-get install build-essential
+C.yum install Development Tools
+D.yum groupinstall Development Tools
+Answer: BD
+Q163.(多选)关于 Dockerfile 的描述，以下哪些是正确的？
+A.Dockerfile一般包含四部分内容：基础镜像信息、维护者信息、镜像操作指令和容器启动时执行指令
+B.Dockerfile中，第一条指令必须为 FROM指令
+C.EXPOSE在Dockerfile中是必选的
+D.完成Dockerfile编写后，可以通过docker build命令来创建镜像
+Answer: ABD
+Q164.(多选)华为鲲鹏云服务包括以下哪些？
+A.华为鲲鹏裸金属服务器
+B.鲲鹏弹性云服务器
+C.鲲鹏容器
+D.鲲鹏云手机
+Answer: ABCD
+Q165.(多选)以下哪些属于华为鲲鹏920芯片的特点？
+A.集成最多64个自研核
+B.支持8通道DDR4控制器
+C.支持CCIX接口
+D.只支持GE/10GE网络
+Answer: ABC
+Q166.(多选)以下哪些属于鲲鹏软件栈发布的五大软件领域？
+A.操作系统
+B.游戏软件
+C.基础软件
+D.应用软件
+Answer: ACD
+Q167.(多选)在BenchmarkSQL连接PostgreSQL前，在PostgreSQL侧需要修改哪些文件
+A.pg_ident.conf
+B.PosgreSQL.conf
+C.pg_hba.conf
+D.PostgreSQL.auto.conf
+Answer: BC
+Q168.(多选)BenchmarkSQL可以对哪些数据库进行测试?
+A.Post gresSQL
+B.Oracle
+C.SQL Server
+D.MySQL
+Answer: ABC
+Q169.鲲鹏计算平台已经兼容的操作系统可通过http://support.huawei.com/onlinetoolweb/ftca/index?serise=9链接查询
+A.正确
+B.错误
+Answer: A
+Q170.华为云鲲鹏社区目前是否提供软件下载功能？
+A.是
+B.否
+Answer: A
+Q171.可以执行rpmbuild -ba redis.spec生成二进制文件
+A.正确
+B.错误
+Answer: B
+Q172.使用华为鲲鹏性能优化工具对C/C++应用程序进行性能分析时，能够查看到函数源代码、汇编代码，以及函数汇编代码basic block的控制流图
+A.正确
+B.错误
+Answer: A
+Q173.CPU性能和网络带宽都会影响HPC性能
+A.正确
+B.错误
+Answer: A
+Q174.纯Java语言开发的代码，无依赖的SO库文件不需要编译，可以直接在JVM（Java虚拟机）中运行
+A.正确
+B.错误
+Answer: B
+Q175.鲲鹏处理器和x86处理器的add指令是一样的
+A.正确
+B.错误
+Answer: B
+Q176.A-Tune是一种通过非侵入式系统画像的负载感知方法，识别业务并匹配最佳资源模型，实时响应业务特征变化的AI自动调优系统
+A.正确
+B.错误
+Answer: A
+Q177.Android手机应用在鲲鹏云服务上运行仍需要指令翻译器
+A.正确
+B.错误
+Answer: B
+Q178.在BenchmarkSQL的测试结果中，Running Average tpmTOTAL 值和Current tpmTOTAL值越高，表示性能越差.
+A.正确
+B.错误
+Answer: B
+Q179.Porting Advisor工具界面中的GCC版本需要与后台操作系统中的GCC版本保持一致
+A.正确
+B.错误
+Answer: B
+Q180.rpm包中包含所有源代码文件
+A.正确
+B.错误
+Answer: B
+Q181.私有镜像不能通过外部镜像文件创建
+A.正确
+B.错误
+Answer: B
+Q182.CPU Core访问服务器上不同位[的内存时，内存访问延迟从高到低排序正确的是?
+A.跨Socket >跨NUMA不跨Socket > NUMA内
+B.NUMA内>跨NUMA不跨Socket >跨Socket
+C.跨NUMA不跨Socket >跨Socket > NUMA内
+D.跨Socket > NUMA内>跨NUMA不跨Socket
+Answer: A
+Q183.性能分析时，若只对16核服务器上的第2-5核CPU进行性能分析，以下关于参数“待采集CPU核”配置不正确的是?
+A.2-3,4-5
+B.2-4,3-5
+C.2,3,4,5
+D.02月05日
+Answer: B
+Q184.下列哪种场景不属于TPCC交易类型?
+A.新订单
+B.发货
+C.支付
+D.交易额汇总
+Answer: D
+Q185.下列哪个编译器支持- mcpuFtsv110参数?
+A.GNU
+B.ICC
+C.AHC
+D.CMAKE
+Answer: A
+Q186.以下哪条命令可用于设置docker随系统启动?
+A.systemctl start docker
+B.systemctl restart docker
+C.systemctl enable docker
+D.systemctl status docker
+Answer: C
+Q187.以下哪条命令不能够查到正在运行的容器?
+A.Docker ps -a
+B.docker ps
+C.ps
+D.docker ps -aq
+Answer: C
+Q188.以下哪项是华为鲲鹏代码迁移工具不支持的功能?
+A.检查用户软件C/C++软件，构建工程文件使用的链接库，并提供可移植性信息
+B.检查用户软件RPM包中文件.并指导用户如何进行移植
+C.检查用户软件C/C++源码和x86汇编源码，并指导用户如何移植源文件
+D.检查用户软件C/C++软件构建工程文件，并指导用户如何移植该文件
+Answer: B
+Q189.openEuler是在哪一年开源的?
+A.2016
+B.2019
+C.2010
+D.2013
+Answer: B
+Q190.华为鲲鹏弹性云服务器不包含以下哪种类型?
+A.存储密集型
+B.网络密集型
+C.通用型
+D.内存密集型
+Answer: B
+Q191.TaiShan 2280 V2服务器最多支持多少个DDR4内存插槽?
+A.64
+B.32
+C.16
+D.24
+Answer: B
+Q192.以下列哪个不属于华为鲲鹏伙伴计划?
+A.鲲鹏展翅伙伴计划
+B.鲲鹏智数伙伴计划
+C.鲲鹏凌云伙伴计划
+D.鲲鹏翱翔伙伴计划
+Answer: D
+Q193.安装RPM包可以使用以下哪个命令?
+A.rpm -v
+B.rpm -q
+C.rpm -e
+D.rpm -i
+Answer: D
+Q194.登录Porting Advisor迁移工具时，URL中的端口是什么
+A.8085
+B.8084
+C.8086
+D.8082
+Answer: B
+Q195.以下哪条解压命令可以正确执行?
+A.tar -cxvf gcc-linaro-5.5.0-2017.10-x86_64_aarch64-Linux-gnu.tar.xz
+B.tar gcc-linaro-5.5.0-2017.10-x8664_aarch64_Linux-gnu.tar.xz
+C.tar -zxvf gcc-linaro-5.5.0 -2017.10-x86_64_aarch64-Linux-gnu.tar.xz
+D.tar -Jxvf gcc-linaro-5.5.0-2017.10-x86_64_aarch64-Linux-gnu.tar.xz
+Answer: D
+Q196.关于命令docker.commit -a “huawei.com”-m “redis images” f4603f1f918a t_ arm64v8/centos:7,以下哪项描述是错误的?
+A.“huawei.com”:提交镜像的作者
+B.“t _arm64v8/centos:7” :新生成的镜像名称
+C.“f4603f1f918a”:容器ID
+D.该命令功能是根据镜像ID创建一个新的镜像
+Answer: D
+Q197.以下哪项不属于容器的状态?
+A.deleted
+B.paused
+C.exited
+D.Created
+Answer: A
+Q198.关于华为鲲鹏代码迁移工具CLI访问方式的描述，以下哪项是不正确的?
+A.需要使用操作系统的root用户登录CLI命令行界面
+B.只支持输出csv格式的报告
+C.支持设置debug日志的级别
+D.支持创建用户和用户管理
+Answer: D
+Q199.以下哪项是华为鲲鹏代码迁移工具能够实现的功能?
+A.分析软件源代码，提供应用移植指导
+B.评估移植工作量
+C.修改用户的源代码
+D.执行应用的编译安装
+Answer: A
+Q200.以下哪种型号的TaiShan服务器适合海量的存储环境?
+A.5280
+B.2280
+C.X6000
+D.2480
+Answer: A
+Q201.以下哪项不是TaiShan 200机架服务器的优点?
+A.分级存储:支持大容量存储硬盘和ES3000 V5 NVMe SSD
+B.大内存容量:8通道内存技术，支持32个DDR4内存插槽
+C.超强算力:高性能鲲鹏920处理器
+D.超强AI加速:支持华为Atlas 300 AI加速卡，满足多场景训练
+Answer: D
+Q202.以下哪个不是华为云鲲鹏云服务?
+A.鲲鹏机器学习服务
+B.鲲鹏应用运维服务
+C.鲲鹏云硬盘服务
+D.鲲鹏容器服务
+Answer: A
+Q203.下载的源码包放在哪个目录下?
+A.BUILD
+B.RPMS
+C.SOURCES
+D.SPEC
+Answer: C
+Q204.RPM打包使用的是什么命令，这个命令来自以下哪个包？
+A.rpm , rpmbuild包
+B.rpmbuild ，rpm-build包
+C.rpmbuild , rpmbuild包
+D.rpm , rpm-build包
+Answer: B
+Q205.(多选)HiBench包含以下哪些测试类别?
+A.websearch
+B.sql
+C.micro
+D.matrix
+E.ml
+Answer: ABCE
+Q206.(多选)中标麒麟广泛使用在以下哪些行业？
+A.能源
+B.政府
+C.金融
+D.交通
+Answer: ABCD
+Q207.(多选)关于华为鲲鹏系列裸金属服务的描述，以下哪些是正确的?
+A.可提供128众核算力
+B.不支持存储共享卷
+C.可搭载自研AI芯片Ascend 310/910
+D.全新SDI 3.0技术带宽可支持40Gbps
+Answer: ACD
+Q208.(多选)在BenchmarkSQL连接PostgreSQL前，需要在PostgreSQL侧做哪些操作
+A.修改数据库监听地址
+B.修改数据库配置文件
+C.创建数据库用户
+D.创建数据库
+Answer: ABCD
+Q209.(多选)BenchmarkSQL连接PostgreSQL时，需要修改配置文件中的哪些参数?
+A.conn
+B.password
+C.user
+D.warehouses
+Answer: ABCD
+Q210.(多选)代码扫描工具Dependency Advisor所生成的扫描报告中，包含哪些内容?
+A.需要移植的依赖库S0文件
+B.源代码总文件大小
+C.需要移植的代码行数
+D.需要移植的源文件
+Answer: ACD
+Q211.(多选)华为云弹性云服务器的CPU架构有哪几种?
+A.鲲鹏架构
+B.CentOS
+C.AMD
+D.x86架构
+Answer: AD
+Q212.(多选)SRPM包中包含以下哪些内容?
+A.依赖的外部库文件
+B.未编译的源码
+C.已编译的程序
+D.spec文件
+Answer: BD
+Q213.(多选)以下哪些是spec文件的标签
+A.%install
+B.%prep
+C.%spec
+D.%buildroot
+Answer: AB
+Q214.(多选)通过以下哪些方法可以设置CPU的亲和性?
+A.nice命令
+B.echo cpuMask>/proc/irq/cpuMask>/proc/irq/irq/smp affinity- list
+C.numact1命令
+D.C语言的sched setaffinity函数
+Answer: BCD
+Q215.(多选)以下哪些是TPCC模型的性能衡量指标?
+A.CPU主频
+B.流量指标
+C.性价比
+D.响应时间
+Answer: BC
+Q216.(多选)导致弱内存序的主要原因包括?
+A.多线程并发
+B.多核运行程序
+C.内存数据同步
+D.CPU中的cache缓存数据
+E.指令乱序执行
+Answer: ACDE
+Q217.(多选)可以通过以下哪些方式创建镜像?
+A.利用Dockerfile来创建镜像
+B.通过docker pul1方式创建镜像
+C.通过yum install方式创建镜像
+D.通过wget方式创建镜像
+Answer: AB
+Q218.(多选)创建源码分析任务时，设置编译器版本的目的是什么?
+A.用于检查源码中使用的架构相关的编译器宏、builtin函数、 at tribute函数、用户自定义宏等，确定需要移植的源码及源文件
+B.用于解析用户软件的Makefile文件， 整理出用户软件目标二进制文件依赖的源文件集合和编译时依赖的S0文件名，使用的编译选项，宏定义和变量
+C.用于确定x86与鲲鹏平台相异的编译器宏、编译选项、builtin函数、attribute函数等列表
+D.用于区分不同的源码使用的编译器版本
+Answer: ABC
+Q219.(多选)华为鲲鹏代码迁移工具能够针对以下哪些场景提供精准的移植指导和建议?
+A.对于汇编指令的移植优化，由于汇编指令在x86和鲲鹏平台上完全不同，工具会直接提供ARM版本的相应指令进行替换
+B.对于乘法函数，工具能够自动识别并推荐使用ARM平台支持的NEON向量乘法指令进行替换
+C.对于一些特殊的指令用法差异，工具也能精准识别出来，例如_ syne_ _fetch and add函数读取的变量，会涉及到原子操作和锁操作，必须按变量长度进行字节对齐，避免触发异常，导致程序错误
+D.对于已经有编译好可用的依赖库文件，工具提供开源版本的下载链接供用户直接使用
+Answer: ABCD
+Q220.(多选)在中标麒麟OS_上使用华为鲲鹏920内置的加速引擎，以下哪些选项是正确的?
+A.使用源码包编译的方式安装加速引擎软件
+B.可以使用RPM包安装加速引擎软件
+C.通过openssl接口调用RSA加速引擎接口
+D.无需安装配置，可以直接使用
+Answer: ABC
+Q221.(多选)在从x86平台向鲲鹏处理器迁移软件时，技术分析阶段需要完成以下哪些活动?
+A.制定迁移计划
+B.确认当前系统使用的CentOS版本与鲲鹏处理器是否兼容
+C.申请或准备调试环境
+D.分析C/C++代码中调用的boost库能否移植
+E.分析商用数据库的迁移策略
+F.安装部署C/C++编译器
+Answer: ABCD
+Q222.(多选)关于GPL的描述正确的有哪些?
+A.GPL允许用户任意复制、传递、修改及再次发布遵从GPL的软件
+B.遵循GPL的软件不允许收费
+C.基于自由软件修改再次发布的软件仍需要遵循GPL
+D.GPL是自由软件的通用许可证
+Answer: ACD
+Q223.(多选)以下哪些是openEuler的技术特性?
+A.支持块设备I/0跟踪
+B.改进安装程序，简化安装
+C.优化编辑器，使用更加稳定
+D.多种安全机制，保障系统安全
+Answer: ABCD
+Q224.(多选)关于华为云服务中的鲲鹏云手机服务的特性，以下哪些描述是正确的?
+A.运行在华为自研芯片及硬件底座上
+B.兼容32/64位ARM原生指令
+C.支持自研高性能GPU
+D.Monbox双OS共内核架构
+Answer: ABCD
+Q225.C/C++语言中的char数据类型在x86与鲲鹏处理器下完全一致
+A.正确
+B.错误
+Answer: B
+Q226.使用C/C++/Go语言开发的源码，必须要编译后才能运行
+A.正确
+B.错误
+Answer: A
+Q227.使用Python语言开发的程序在迁移至鲲鹏处理器时，必须要编译pyc文件(字节码)
+A.正确
+B.错误
+Answer: B
+Q228.C/C++语言中的char数据类型在x86与鲲鹏处理器下完全一致
+A.正确
+B.错误
+Answer: B
+Q229.HPC解决方案中，动漫渲染属于数据密集紧耦合场景
+A.正确
+B.错误
+Answer: B
+Q230.若PostgreSQL数据库安装在/home/pgsq1/目录下，那么初始化数据库的命令为，"#/home/pgsql/bin/initdb -D /pgsql/".
+A.正确
+B.错误
+Answer: A
+Q231.使用Porting Advisor迁移工具可以生成兼容华为鲲鹏平台的代码
+A.正确
+B.错误
+Answer: A
+Q232.使用yum工具安装软件时，可以自动解决安装软件的依赖问题
+A.正确
+B.错误
+Answer: A
+Q233.基于云服务器创建的整机镜像支持共享、复制和导出
+A.正确
+B.错误
+Answer: A
+Q234.通过镜像服务可以在弹性云服务器实例上实现应用的快速部署
+A.正确
+B.错误
+Answer: A
+Q235.使用rpm命令安装软件时，能自动安装依赖包
+A.正确
+B.错误
+Answer: B
+Q236.鲲鹏芯片的CPU架构采用的是RISC精简指令集
+A.正确
+B.错误
+Answer: A
+Q237.共享带宽可以实现多个弹性公网IP共用一条带宽
+A.正确
+B.错误
+Answer: A
+Q238.华为鲲鹏性能优化工具支持以多用户多任务并发访问的方式使用Web界面
+A.正确
+B.错误
+Answer: B
+Q239.对不同的HiBench测试类别来说，同一数据规模(如bigdata)代表的数据量是一样的
+A.正确
+B.错误
+Answer: B
+Q240.用户可以从docker Hub获取已有镜像并进行更新，也可以利用本地已有的镜像创建个新的镜像
+A.正确
+B.错误
+Answer: A
+Q241.Python语言开发的代码不需要编译，可以直接在PVM (Python虚拟机)中运行
+A.正确
+B.错误
+Answer: B
+Q242.openEuler 1.0是一款开源操作系统，支持鲲鹏、至强及其他多种处理器，能充分释放计算芯片的潜能
+A.正确
+B.错误
+Answer: A
+Q243.从x86平台向华为鲲鹏平台迁移软件，动态链接库在源码编译时需要替换
+A.正确
+B.错误
+Answer: A
+Q244.容器退出后会处于终止(exited) 状态，可以通过“docker ps -a”查看相关容器，但是数据会丢失
+A.正确
+B.错误
+Answer: B
+Q245.常见弱内存序问题是通过增加内存屏障来解决的
+A.正确
+B.错误
+Answer: A
+Q246.若PostgreSQL数据库安装在/home/pgsq1/目录下，那么登录数据库的命令为:"#/home/pgsql/bin/psql -U postgres"
+A.正确
+B.错误
+Answer: A
+Q247.通过"ps -ef | grep PostgreSQL"命 令可以确认数据库进程是否启动
+A.正确
+B.错误
+Answer: B
+Q248.使用Porting Advisor工具进行代码迁移时，只需要一台服务器，即可完成代码迁移的全过程
+A.正确
+B.错误
+Answer: B
+Q249.当网络结构发生变化时，静态BGP无法实时自动调整网络设置以保障用户体验
+A.正确
+B.错误
+Answer: A
+Q250.常见弱内存序问题是通过增加内存屏障来解决的
+A.正确
+B.错误
+Answer: A
+Q251.VM(Java虚拟机)屏蔽了不同CPU的指令集差异
+A.正确
+B.错误
+Answer: A
+Q252.若需要使用华为鲲鹏920内的加速引擎，则必须使用openssl 1.1.1a及以上版本
+A.正确
+B.错误
+Answer: A
+Q253.TaiShan 2280服务器适用于低功耗场景
+A.正确
+B.错误
+Answer: A
+Q254.使用Porting Advisor迁移工具可以生成兼容华为鲲鹏平台的代码
+A.正确
+B.错误
+Answer: A
+Q255.云平台上的私有镜像对所有用户可见.
+A.正确
+B.错误
+Answer: B
+Q256.CentOS6.5或更高，系统为64位.系统内核版本为2.6.32-431或者更高版本支持Docker
+A.正确
+B.错误
+Answer: A
+Q257.-mabi=lp64是编译生成应用程序为64位的鲲鹏编译选项
+A.正确
+B.错误
+Answer: A
+Q258.CentOS7，系统为64位，系统内核版本为2.10以上支持Docker
+A.正确
+B.错误
+Answer: B
+Q259.华为云鲲鹏云服务部署方式必须全部采用鲲鹏平台部署
+A.正确
+B.错误
+Answer: B
+Q260.对于不能获得源码的闭源软件迁移至鲲鹏计算平台，只能选取可替代的其他软件
+A.正确
+B.错误
+Answer: B
+Q261.基于x86架构编译的C/C++语言应用程序，无法直接在华为鲲鹏云服务器上运行，需要进行移植编译
+A.正确
+B.错误
+Answer: A
+Q262.鲲鹏920芯片.主频.工艺.内存.网络能力全面领先业界，相比AWS Graviton整整领先5代
+A.正确
+B.错误
+Answer: B
+Q263.X86架构和ARM架构下汇编语言中的相加的代码没有差异
+A.正确
+B.错误
+Answer: B
+Q264.基于go语言编写的程序支持跨平台运行，不需要重新编译
+A.正确
+B.错误
+Answer: B
+Q265.华为鲲鹏920处理器内置加密模块，支持国密，内置GZIP模块
+A.正确
+B.错误
+Answer: A
+Q266.鲲鹏云HPC提供HPC集群管理平台（HWCC），可以一键式部署HPC集群
+A.正确
+B.错误
+Answer: A
+Q267.华为鲲鹏代码迁移工具Web方式支持多用户同时使用
+A.正确
+B.错误
+Answer: B
+Q268.华为鲲鹏代码迁移工具提供CLI命令行和Web界面使用方式
+A.正确
+B.错误
+Answer: A
+Q269.char变量在x86和鲲鹏架构下的默认符号是一致的
+A.正确
+B.错误
+Answer: B
+Q270.HCS Online可支持ARM+X86混合部署模式
+A.正确
+B.错误
+Answer: A
+Q271.鲲鹏云服务可提供通用KC1计算型ECS和通用型KS1通用型BMS
+A.正确
+B.错误
+Answer: A
+Q272.目前鲲鹏内存优化型云服务器km1可购买的最大内存为（）GB。
+A.192
+B.256
+C.384
+D.480
+Answer: D
+Q273.以下哪一项不是鲲鹏处理器的优点？（）
+A.同样功能性能占用的芯片面积小.功耗低.集成度更高，更多的硬件CPU核具备更好的并发性能
+B.支持16位.32位.64位多种指令集，能很好的兼容从IOT.终端到云端的各类应用场景
+C.大量使用寄存器，大多数数据操作都在寄存器中完成，指令执行速度更快
+D.采用RISC指令集，指令长度固定，寻址方式灵活简单，对复杂运算的处理效率高
+Answer: D
+Q274.以下哪一项不是HCSOnline解决方案的核心价值？（）
+A.底层架构灵活，可根据客户业务定制
+B.部署模式灵活，满足不同场景需求
+C.与公有云服务长期同步演进
+D.统一运维，节约成本
+E.可构建与华为云同构的混合云
+Answer: A
+Q275.以下哪个不属于鲲鹏系列裸金属服务器？（）
+A.KS1
+B.KM1
+C.KH1
+D.KD1
+Answer: B
+Q276.在ARM64平台,char变量默认为（）
+A.unsignedchar(8位)
+B.signedchar(8位)
+C.unsignedchar(16位)
+D.signedchar(16位)
+Answer: A
+Q277.下列哪种场景不适用于通用计算增强型KC1（）。
+A.大数据
+B.HPC(渲染.基因)
+C.互联网应用
+D.语音识别
+Answer: D
+Q278.华为联合发布伙伴公有云的时间是？（）
+A.2012
+B.2015
+C.2016
+D.2019
+Answer: C
+Q279.鲲鹏920芯片使用的指令集版本是（）
+A.arm9
+B.arm11
+C.armv7
+D.armv8
+Answer: D
+Q280.华为在哪一年拥有ARMv8架构的永久授权？（）
+A.2013
+B.2016
+C.2015
+D.2017
+Answer: B
+Q281.不是HCSOnline行业云场景客户价值得是（）
+A.集中建设，共建共享，统一运营运维，减少投资；
+B.丰富的云服务能力和生态；
+C.满足智慧园区场景下业务属地化部署
+D.专业容灾咨询服务，复制华为高业务连续性成功经验。
+Answer: D
+Q282.如下那些能力是鲲鹏920芯片独有。（）
+A.最大核数128
+B.主频2.6Ghz
+C.16nm工艺
+D.内嵌加密模块
+Answer: D
+Q283.鲲鹏裸金属服务器的多核算力领先同X86平台（），更好满足大数据.HPC等高并发场景。
+A.20%
+B.30%
+C.50%
+D.70%
+Answer: B
+Q284.鲲鹏CPU相比同等x86主机，内存带宽高于x86（），整型计算能力高（）。
+A.25%，46%
+B.30%，50%
+C.50%，30%
+D.46%，25%
+Answer: D
+Q285.云硬盘最大支持多少个磁盘（）
+A.100
+B.200
+C.300
+D.400
+Answer: D
+Q286.鲲鹏系列裸金属服务器的CPU核数能达到多少核（）
+A.32
+B.64
+C.128
+D.支持无限扩展
+Answer: C
+Q287.鲲鹏920芯片的发布时间是（）
+A.2016年
+B.2015年
+C.2019年
+D.2012年
+Answer: C
+Q288.下列关于裸金属服务器描述不正确的选项是（）
+A.高网络性能
+B.支持极速云盘
+C.ArmNative
+D.预防网络攻击
+Answer: D
+Q289.单个云硬盘最大可扩容多少（）
+A.32TB
+B.64TB
+C.128GB
+D.128TB
+Answer: A
+Q290.在鲲鹏架构下编译C/C++程序，对char类型应如何处理？（）
+A.无需进行额外处理
+B.将char类型声明修改为：unsignedchar
+C.在编译选项中-fsigned-char
+D.在编译选项中设置-mabi=lp64
+Answer: C
+Q291.在鲲鹏平台编译安装MySql5.7时，（）不是需要安装的依赖包
+A.ncurses
+B.php70w-mysql
+C.cmake
+D.libaio-devel
+Answer: B
+Q292.下面不属于Hibench测试流程的是（）
+A.修改相应配置
+B.执行测试脚本
+C.测试分类
+D.查看测试报告
+Answer: C
+Q293.GCC升级…/configure命令后面的配置项哪一条是错误的是（）
+A.–enable-checking=release
+B.–enable-languages=c,c++
+C.–disable-multilib
+D.–initialize-insecure
+Answer: D
+Q294.CLI方式进行代码分析，那些参数是必须选择的（）
+A.source
+B.compiler
+C.tools
+D.tk
+Answer: A
+Q295.BenchmarkSQL配置文件中Terminals指的是什么（）
+A.指定并发用户数
+B.数据库装载
+C.数据库并行数
+D.数据库表的数量
+Answer: A
+Q296.鲲鹏系列裸金属服务器多核算力，并发性能提升（）
+A.0.2
+B.0.3
+C.0.4
+D.0.5
+Answer: B
+Q297.假如遇到如下场景，关系数据库NoSQL数据库.内存数据分析时，选择弹性云服务器种类应该为（）
+A.通用型
+B.存储密集型
+C.内存密集型
+D.网络密集型
+Answer: C
+Q298.如下哪项功能不是态势感知服务提供的？
+A.威胁告警实时监控
+B.安全风险分析
+C.安全事件自动化处理
+D.态势大屏呈现
+Answer: C
+Q299.使用如下CLI命令进行代码分析时，以下哪个参数是可选的？/opt/portadv/tools/bin/porting_advisor-S-C–cmd–tos–tk-D-O
+A.源代码所在路径：-S
+B.编译器版本：-C
+C.软件构建命令：–cmd
+D.软件移植的目标操作系统的信息：–tos
+Answer: C
+Q300.KD1型鲲鹏裸金属的内存规格是
+A.128G
+B.256G
+C.480G
+D.512G
+Answer: D
+Q301.鲲鹏网络服务100GROCE实现的RDMA网络时延为：
+A.15μs
+B.20μs
+C.25μs
+D.30μs
+Answer: A
+Q302.华为鲲鹏920芯片是业界第一颗几nm的数据中心ARMCPU
+A.7
+B.10
+C.12
+D.14
+Answer: A
+Q303.华为鲲鹏916芯片是业界第几个支持多路ARMCPU的
+A.第一
+B.第二
+C.第三
+D.第四
+Answer: A
+Q304.鲲鹏计算加速型弹性云服务器主打场景为
+A.通用计算
+B.高性能计算
+C.AI训练和推理
+D.大数据
+Answer: C
+Q305.鲲鹏存储服务通过鲲鹏多核算力优化IO调度算法，带宽提升
+A.10%
+B.30%
+C.50%
+D.100%
+Answer: D
+Q306.性能分析任务执行完成后，以下哪项是分析结果中无法查看到的?
+A.针对Top热点函数的性能优化建议
+B.函数火焰图
+C.Top 10热点函数性能指标数据
+D.分析过程中的采集日志
+Answer: A
+Q307.以下不推荐使用华为鲲鹏HCS Online解决方案的场景是?
+A.客户属于大型民企，需要部署有本数据平台来做业务的数据分析
+B.客户属于国资委控股企业，因为业务发展快，需要部署一套云平台来承载ERP等核心业务
+C.客户属于军工企业，目前正在进行云化转型，需要购买一套云平台部署在本地，因为数据敏感，要求本地离线运维和升级
+D.客户属于金融ISV,希望快速购买一个云平台，部署自己的SaaS服务和运营平台，供其金融客户使用
+Answer: C
+Q308.关于镜像和容器的描述，以下哪项是不正确的?
+A.容器是动态的，可用容器来运行应用
+B.镜像是只读的，可以理解为静态文件
+C.容器是由镜像实例化而来的
+D.容器不能拥有root权限，否则很不安全
+Answer: D
+Q309.以下哪项是华为云鲲鹏云服务器系列的规格?
+A.kc1
+B.ck2
+C.ck1
+D.c6
+Answer: A
+Q310.(多选)在PostgreSQL迁移前，需满足哪些条件?
+A.gcc编译器已经安装5.3及以上版本
+B.服务器与PC之间网络互通
+C.CentOS 7.6操作系统已经安装，且已经获取root用户帐号和密码
+D.已安装Porting Advisor工具
+Answer: ABCD
+Q311.(多选)在将Redi s源码包制作成RPM包的过程中，SPEC配置文件包含以下哪些参数?
+A.%install
+B.%files
+C.%build
+D.%setup
+Answer: ABCD
+Q312.(多选)以下关于创建C/C+ +程序性能分析任务时配置采集时长，描述正确的是?
+A.某次采集配置的采集时长为30s.但是实际采集过程执行完成耗时为15分钟则该15分钟包含30s采集时间，以及1 4分30秒的采集数据解析和采集数据入库时间，采集过程耗时与采集数据量大小有直接关系
+B.采集日志中的“采集过程”体现的是采集时长内的日志信息
+C.采集时长就是指实际采集性能数据所花费的时间
+D.当分析类型选择为Attach to Process时， 无需配置采集时长
+Answer: AC
+Q313.(多选)以下哪些是华为云鲲鹏云服务支持的场景?
+A.windows原生应用
+B.大数据分析
+C.移动原生应用
+D.科学计算
+Answer: BCD
+Q314.(多选)openEuler 1.0可以安装在哪些服务器上?
+A.Tai Shan X6000
+B.RH5885H V5
+C.TaiShan 2280
+D.RH2288H V5
+Answer: ABCD
+Q315.(多选)将商用软件迁移至鲲鹏处理器，以下哪些说法是正确的?
+A.使用GaussDB替换与鲲鹏处理器不兼容的数据库软件
+B.寻找功能相近的开源软件替换
+C.获取在鲲鹏处理器认证后的版本
+D.使用与鲲鹏处理器兼容的版本替代
+E.联系厂商获取源码重新编译
+Answer: ABCDE
+Q316.(多选)以下关于Hi Bench的描述，正确的是?
+A.HiBench可用于评估大数据框架的性能
+B.HiBench是一款闭源的大数据基准测试套件
+C.HiBench支持Hadoop、Spark等组件
+D.HiBench支持hadoopbench、flinkbench、stormbench等框架
+Answer: ACD
+Q317.(多选)华为鲲鹏性能优化工具支持部署在以下哪些类型的操作系统上?
+A.openEuler
+B.Ubuntu
+C.中标麒麟OS
+D.CentOS
+Answer: ABCD
+Q318.(多选)华为鲲鹏HCS Online解决方案有哪些主打场景?
+A.多级混合云场景
+B.行业云场景
+C.HCSO+灾备场景
+D.智能大数据场景
+Answer: ABCD
+Q319.(多选)通过华为鲲鹏性能优化工具对C/C++应用程序进行性能分析时，分析结果包括的是？
+A.各个函数性能指标数据统计，以及函数代码映射信息
+B.任务执行时间、指令数、时钟周期、IPC等总体性能指标统计
+C.热点函数识别，以及函数火焰图
+D.后台进程的调度延迟情况
+Answer: ABC
+Q320.(多选)通过系统盘镜像创建的云服务器与原始云服务器中的哪些内容是相同的?
+A.操作系统
+B.数据盘大小及配置
+C.预先安装的软件应用
+D.系统盘大小及配置
+Answer: AC
+Q321.(多选)关于容器描述，以下哪些是正确的?
+A.容器为应用提供封装和隔离的功能
+B.docker“几乎”成为事实上的容器标准
+C.容器具备迁移功能，可以把x86服务器上的容器迁移到鲲鹏服务器上
+D.容器是一种轻量级、可移植、自包含的软件打包技术
+Answer: ABD
+Q322.(多选)华为鲲鹏代码迁移工具支持哪些应用程序类型?
+A.汇编
+B.Java
+C.C/C++
+D.Python
+Answer: AC
+Q323.(多选)关于华为鲲鹏应用迁移的描述，以下哪些是正确的?
+A.使用openl ab线上资源作为迁移环境，本地办公环境需要能够连接公网
+B.openl ab不仅提供了线上服务器资源，同时还提供编译构建等持续构建能力，以及安全/兼容性/稳定性/功耗/性能等测试套
+C.如果迁移的代码包含开源软件源码，服务器环境需要能够连接公网
+D.openl ab提供生态认证，帮助ISV合作伙伴推广生态
+Answer: ABCD
+Q324.(多选)以下哪些是openEuler的技术特性?
+A.改进安装程序，简化安装
+B.支持块设备I /0跟踪
+C.多种安全机制，保障系统安全
+D.优化编辑器，使用更加稳定
+Answer: ABCD
+Q325.(多选)ARM芯片具有以下哪些优势?
+A.ARM芯片工艺相对x86更先进
+B.单位芯片面积算力更强
+C.同样的芯片尺寸下，ARM的核数是x86的4倍以上
+D.众核架构更符合分布式业务需求
+Answer: AC
+Q326.(多选)以下哪些属于鲲鹏软件栈发布的五大软件领域?
+A.操作系统
+B.游戏软件
+C.应用软件
+D.基础软件
+Answer: ACD
+Q327.(多选)以下哪些是RPM包的优势
+A.便于软件管理
+B.让软件无需安装
+C.快速安装软件
+D.跨平台跨0S随意安装
+Answer: AC
+Q328.(多选)在华为云上购买华为鲲鹏云服务器，计费模式有哪几种?
+A.按数量计费
+B.按需计费
+C.包年/包月
+D.按容量计费
+Answer: BC
+Q329.(多选)以下关于私有IP说法正确的是?
+A.私有IP的路由信息可以对外散播
+B.私有IP的路由信息不能对外散播
+C.使用私有IP作为来源或目的地址的封包，不能透过Internet来转送
+D.关于私有IP的参考纪录(如DNS),可用于外部网络使用
+Answer: BC
+Q330.(多选)泰山服务器应用场景
+A.分布式存储
+B.大数据
+C.AI
+D.WEB
+Answer: ABCD
+Q331.(多选)华为鲲鹏计算产业相关产品有哪些？
+A.华为鲲鹏处理器
+B.TaiShan服务器
+C.华为云鲲鹏云服务
+D.X86服务器
+Answer: ABC
+Q332.(多选)以下哪些是鲲鹏生态的组成部分？（）
+A.鲲鹏社区
+B.鲲鹏严选市场
+C.鲲鹏开发者
+D.凌云计划
+Answer: ABCD
+Q333.(多选)以下哪些是HCSOnline解决方案的主要应用场景？（）
+A.行业云
+B.灾备云
+C.小型私有云
+D.多级混合云
+Answer: ABD
+Q334.(多选)以下属于高性能计算HPC解决方案GO核心价值的有（）
+A.性能卓越
+B.性价比高
+C.多组织.区域租户共享
+D.部署方式灵活
+Answer: ABCD
+Q335.(多选)鲲鹏Kubernetes容器（CCE）服务包含几种类型集群？
+A.通用鲲鹏容器集群
+B.混合计算容器集群
+C.AI鲲鹏容器集群
+D.大数据鲲鹏容器集群
+Answer: ABC
+Q336.(多选)以下场景中哪些属于高性能计算HPC解决方案典型场景？（）
+A.基因测序
+B.工业仿真
+C.动漫渲染
+D.气象预测
+Answer: ABCD
+Q337.(多选)华为云鲲鹏云服务的专业服务有以下哪些（）
+A.咨询服务
+B.实施服务
+C.知识库服务
+D.专家服务
+E.售后服务
+F.培训服务
+Answer: ABCDEF
+Q338.(多选)加入鲲鹏凌云伙伴计划后，合作伙伴可享受的权益有（）
+A.培训支持
+B.技术支持
+C.营销支持
+D.业务支持
+Answer: ABCD
+Q339.(多选)ARM采取开放的商业IP授权模式，授权方式（级别）有哪些？（）
+A.使用层级授权-可使用封装好的ARM芯片，而不能进行任何修改
+B.工艺层级授权-可更改授权ARM芯片的电路设计，使用自己的工艺重新设计芯片
+C.内核层级授权-可基于购买的ARM内核进行芯片开发.设计，有一定的自主开发权
+D.架构/指令集层级授权-可对ARM架构进行改造，甚至对ARM指令集进行扩展或缩减
+Answer: ACD
+Q340.(多选)HiBench用于评估大数据框架的下列哪些用途（）
+A.速度
+B.吞吐量
+C.系统资源利用率
+D.安全
+Answer: ABC
+Q341.(多选)以下哪些组件在移植中要首先进行编译？（）
+A.mysql
+B.gcc
+C.nginx
+D.tomcat
+Answer: ABC
+Q342.(多选)场景化鲲鹏解决方案适用于哪些应用场景？（）
+A.HPC
+B.大数据+AI
+C.鲲鹏原生
+D.企业应用
+Answer: ABCD
+Q343.(多选)鲲鹏社区包含以下哪些模块？（）
+A.鲲鹏软件栈
+B.鲲鹏论坛
+C.产品与云服务
+D.鲲鹏伙伴计划
+Answer: ABCD
+Q344.(多选)“鲲鹏云”包括如下哪些（）
+A.芯片
+B.操作系统
+C.服务器
+D.软件
+E.云服务与解决方案
+Answer: ABCDE
+Q345.(多选)如下那些阶段属于软件迁移的过程（）
+A.技术分析
+B.编译迁移
+C.功能验证
+D.性能调优
+E.软件安装
+Answer: ABCD
+Q346.(多选)华为鲲鹏性能优化工具Analysis子模块提供了哪些功能？（）
+A.用户管理.数据库存储空间管理.日志管理
+B.根据分析请求，将原始数据汇总
+C.对性能数据进行分析，给出优化建议
+D.提供性能分析结果查询结果
+Answer: ABCD
+Q347.(多选)下列哪些选项属于鲲鹏云提供的服务目录（）
+A.行业支撑
+B.ARM架构
+C.功能验证
+D.基础层次
+E.语言支持
+Answer: ACDE
+Q348.(多选)以下语种代码程序在迁移过程中不需要重新编译的有（）
+A.JAVA
+B.PHP
+C.C
+D.Python
+Answer: ABD
+Q349.(多选)HCS Online智能大数据场景方案优势有哪些？（）
+A.EI分级部署，云上训练，云下推理
+B.华为云语音识别.人脸识别.OCR的开放API能力
+C.ROMA解决方案集成能力
+D.IEF最强边缘计算能力
+Answer: ABCD
+Q350.(多选)华为鲲鹏性能优化工具功能特性包括哪些（）
+A.支持采集整个系统或指定进程的CPUCycles性能事件，能够快速定位热点函数
+B.支持通过火焰图查看热点函数及其调用栈
+C.支持代码映射功能，即查看函数内的热点指令及该指令对应的高级语言文件及行号
+D.支持分析Java代码的热点函数及热点指令
+Answer: ABCD
+Q351.(多选)请选出X86处理器汇编指令（）
+A.Idrx0,[sp,#8]|从内存将变量b的值放入寄存器x0
+B.add%edx,%eax|将edx(a)中的值加上eax(b｝的值放入eax寄存器
+C.mov-0x8(%rbp),%eax|从内存将变量b的值放入寄存器的x0
+D.strxO,[spf,#4]|将甸寄存器的值存入内存(变量c)
+Answer: BC
+Q352.(多选)如下哪些属于编译型计算机语言（）
+A.Ruby
+B.C++
+C.python
+D.Swift
+Answer: BD
+Q353.(多选)如下哪些属于解释型计算机语言（）
+A.java
+B.Golang
+C.C#
+D.PHP
+Answer: AD
+Q354.(多选)测试工具-BenchmarkSQL支持的数据库有（）
+A.PostgreSQL
+B.redis
+C.EnterpriseDB
+D.DB2
+Answer: ACD
+Q355.(多选)请选出鲲鹏处理器汇编指令（）
+A.Idrx0,[sp,#8]|从内存将变量b的值放入寄存器x0
+B.add%edx,%eax|将edx(a)中的值加上eax(b｝的值放入eax寄存器
+C.mov-0x8(%rbp),%eax|从内存将变量b的值放入寄存器的x0
+D.strxO,[spf,#4]|将甸寄存器的值存入内存(变量c)
+Answer: AD
+Q356.(多选)鲲鹏云手机的主要场景有
+A.应用托管
+B.云游戏
+C.高性能计算
+D.移动安全办公
+Answer: ACD
